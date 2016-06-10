@@ -1,0 +1,11 @@
+//Overlapping the text, like "I am a programmer" to "I am a program..."
+.class {
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+
+//You can apply specific style to multiple classes by using comma ","
+.class1, class2, .class3 {
+    font-style: italic;
+}
