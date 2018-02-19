@@ -11,7 +11,7 @@ function emailExists($conn, $email)
 {
     $exists = false;
     $sql = "select id from customers where email=\"$email\"";
-    $result = mysql_query($sql, $conn); /* or die(mysql_error()); Remove MYSQL ERROR {FARHAN} */
+    $result = mysql_query($sql, $conn);
     $numrows = mysql_num_rows($result);
 
     if ($numrows > 0)
@@ -27,7 +27,7 @@ function userExists($conn, $user)
     $exists = false;
     $sql = "select id from customers where user_name=\"$user\"";
 
-    $result = mysql_query($sql, $conn); /* or die(mysql_error()); Remove MYSQL ERROR {FARHAN} */
+    $result = mysql_query($sql, $conn);
     $numrows = mysql_num_rows($result);
     if ($numrows > 0)
     {
