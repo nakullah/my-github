@@ -9,8 +9,8 @@ function daysToSec($days)
 
 function emailExists($conn, $email)
 {
-    $exists = false;
-    $sql = "select id from customers where email=\"$email\"";
+    $exists = FALSE;
+    $sql = "SELECT id FROM customers WHERE email=\"$email\"";
     $result = mysql_query($sql, $conn);
     $numrows = mysql_num_rows($result);
 
