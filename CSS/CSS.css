@@ -6,6 +6,6 @@ white-space: nowrap;
 }
 
 //You can apply specific style to multiple classes by using comma ","
-.class1, class2, .class3 {
+.class1, .class2, .class3 {
     font-style: italic;
 }
